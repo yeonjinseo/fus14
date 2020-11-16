@@ -23,3 +23,5 @@
 - git commit -m
 
 ##태그추가하기
+- git tag v4
+- git tag v3 태그번호 쓰기
