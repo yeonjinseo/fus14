@@ -21,3 +21,5 @@
 - git status
 - git add
 - git commit -m
+
+##태그추가하기
