@@ -25,3 +25,5 @@
 ##태그추가하기
 - git tag v4
 - git tag v3 태그번호 쓰기
+
+## git push -u origin main
