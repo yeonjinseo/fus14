@@ -20,10 +20,11 @@
 - git init
 - git status
 - git add
-- git commit -m
+- git commit -m "변경사항 적기"
 
 ##태그추가하기
 - git tag v4
 - git tag v3 태그번호 쓰기
 
-## git push -u origin main
+## 저장소에 업데이트하기
+명령어 입력(git push -u origin main)
