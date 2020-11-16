@@ -32,3 +32,7 @@ CLI 명령어 환경에서 Git을 학습합니다.
 
 ##저장소에 업데이트하기
 - git push -u origin main(명령어 입력)
+
+##로컬과 리모트 가져오기
+- 우선 리모트에서 수정한 경우 
+    : 리모트에서 수정->push로 땡겨오기(git pull origin main)->수정하고 병합하고 다시 push 하기
