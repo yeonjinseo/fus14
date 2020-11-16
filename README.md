@@ -27,4 +27,4 @@
 - git tag v3 태그번호 쓰기
 
 ## 저장소에 업데이트하기
-명령어 입력(git push -u origin main)
+- git push -u origin main(명령어 입력)
