@@ -1,0 +1,69 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+
+
+
+/* --------------------------------------------
+  * 공통 클래스 */
+
+  .reset-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .button {
+    cursor: pointer;
+    border: none;
+  }
+  
+  .a11y-hidden {
+    overflow: hidden;
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  ::-moz-selection {
+    background: #233d84;
+    color: #ffffff;
+  }
+  
+  ::selection {
+    background: #233d84;
+    color: #ffffff;
+  }
+
+  html{
+    font-size: 10px;
+  }
+  
+  body * {
+    -webkit-tap-highlight-color: rgba(255, 255, 200, 0.3);
+    tap-highlight-color: rgba(255, 255, 200, 0.3);
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-size: 1.6rem;
+
+  }
+
+  nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a img {
+    vertical-align: middle;
+  }
+
+  /* 헤더 디자인 */
+  .app-header{
+    background-color: yellow;
+  }
