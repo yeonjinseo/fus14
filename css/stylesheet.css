@@ -70,7 +70,7 @@
 
   /* 헤더 디자인 */
   .app-header{
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     display: flex;
     /* flex-direction: row;
     flex-wrap: nowrap; */
@@ -83,6 +83,8 @@
   /* 브랜드 로고 */
   .brand{
     margin: 0;
+    line-height: 16px;
+    padding: 2px;
   }
 
   .brand a{
@@ -94,19 +96,16 @@
   /* 메인 메뉴 열기 버튼 */
   .is-open-menu{
     background-color: #fff;
+    padding: 33px 28px;
   }
   .is-open-menu .ir{
-    display: block;
+    display: inline-block;
     background: url(./../images/navigation-button.gif);
-    width: 50px;
-    height: 50px;  
+    width: 26px;
+    height: 22px;  
     background-repeat: no-repeat; 
-    background-position: 50% 50%;
     background-color: #fff; 
-    background-size: 50% 50%;
-    position: fixed;
-    top: 21px;
-    right: 18px;
+    background-position: 50% 50%;
   }
 
   .app-navigation{
