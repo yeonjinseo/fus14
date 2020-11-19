@@ -27,6 +27,11 @@
     height: 1px;
     margin: -1px;
   }
+
+  .response{
+    max-width: 100%;
+    height: auto;
+  }
   ::-moz-selection {
     background: #233d84;
     color: #ffffff;
@@ -65,5 +70,52 @@
 
   /* 헤더 디자인 */
   .app-header{
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #f5f4fb;
+
+  }
+
+  /* 브랜드 로고 */
+  .brand{
+    margin: 0;
+  }
+
+  .brand a{
+    display:block;
+    padding: 20px;
+
+  }
+
+  /* 메인 메뉴 열기 버튼 */
+  .is-open-menu{
+    background-color: #fff;
+  }
+  .is-open-menu .ir{
+    display: block;
+    background: url(./../images/navigation-button.gif);
+    width: 50px;
+    height: 50px;  
+    background-repeat: no-repeat; 
+    background-position: 50% 50%;
+    background-color: #fff; 
+    background-size: 50% 50%;
+    position: fixed;
+    top: 21px;
+    right: 18px;
+  }
+
+  .app-navigation{
+    overflow: hidden;
+    position: fixed;
+    padding-top: 60px;
+  }
+
+  .reset-list li{
+    border-bottom: solid 1px rgb(199, 199, 199);
+   
   }
