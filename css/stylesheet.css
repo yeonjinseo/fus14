@@ -124,7 +124,12 @@
     justify-content: flex-end;
     align-items: flex-start;
     align-content: flex-start;
+    transition: all 0.4s cubic-bezier(0.66, -0.01, 0.3, 0.99);
+    transform: translateX(105vw);
+  }
 
+  .app-navigation.is-active {
+    transform: translateX(0);
   }
 
   .app-navigation ul{
