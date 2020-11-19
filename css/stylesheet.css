@@ -108,13 +108,52 @@
     background-position: 50% 50%;
   }
 
+  /* 네비게이션 */
   .app-navigation{
-    overflow: hidden;
+    background: hsla(225, 57%, 10%, 0.9);
+    color:#fff;
     position: fixed;
-    padding-top: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+
   }
 
-  .reset-list li{
-    border-bottom: solid 1px rgb(199, 199, 199);
-   
+  .app-navigation ul{
+    width: 100%;
+    margin-top: 10px;
   }
+
+  .app-navigation li{
+    border-bottom: 0.5px solid #f5f4fb;
+  }
+  .app-navigation a{
+    display: block;
+    padding: 10px;
+    transition: all 0.4s ease;
+
+  }
+
+  .app-navigation a:hover,
+  .app-navigation a:focus {
+  background: #2e437c;
+}
+
+ .is-close-menu{
+   order: -1;
+   padding: 18px;
+   background-color: transparent;
+ }
+
+ .is-close-menu .close{
+   color: #fff;
+   font-size: 30px;
+ }
