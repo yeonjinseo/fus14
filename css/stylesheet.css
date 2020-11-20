@@ -165,8 +165,67 @@
 
  /* 메인 콘텐츠 */
  .app-main{
-   background-color: yellow;
+   padding: 30px 20px;
+   display: flex;
+   justify-content: center;
  }
+
+ .ediya-menu{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+ }
+
+ .ediya-menu__item{
+   width: 100%;
+   background-color: #f5f5f5;
+ }
+
+ .ediya-menu__item:nth-child(n+2){
+   margin-top: 20px;
+ }
+
+
+
+ .ediya-menu a[role="button"]{
+  display: block;
+  text-align: center;
+  padding-bottom: 40px;
+  color: inherit;
+  text-decoration: none;
+ }
+ 
+ .ediya-menu figure{
+   margin: 0;
+ }
+
+ .ediya-menu img{
+  max-width: 100%;
+  height: auto;
+  transform: scale(0.8);
+  transition: all 0.35s;
+ }
+
+ .ediya-menu a[role="button"]:hover img,
+ .ediya-menu a[role="button"]:focus img{
+   transform: scale(1);
+ }
+
+ @media all and (min-width: 768px) {
+  .ediya-menu {
+    width: 526px;
+    justify-content: space-between;
+  }
+
+  .ediya-menu__item{
+    width: 248px;
+  }
+  .ediya-menu__item:nth-child(2){
+    margin-top: 0;
+  }
+} 
+
 /* 반응형 구현 방법은 여러가지가 있다
 쉽게 가려면
 모바일은 노멀플로우, 데스크탑은 플렉스
@@ -175,6 +234,7 @@
 모바일 , 데스크탑 공통적으로 플렉스, 로우방향 
 모바일은 100%, 데스크탑은 248px 크기로 */
 
+/* 
  .ediya-menu{
   display: flex;
   flex-direction: row;
@@ -211,8 +271,6 @@
    height: 100%;
  }
 
-
-
 .ediya-menu__item{
   position: relative;
   flex: 1 1 40%
@@ -221,11 +279,7 @@
 }
 
  /* 미디어 쿼리 규칙(media query) */
-@media all and (min-width: 768px) {
-  .app-main {
-    background-color:pink;
-  }
-}
+
 
 /* 부모가 늘어나면 안에 자식요소(콘텐츠)도 같이 늘어나고 줄어드는 방법은 response, max-width:100% , height:auto */
 
