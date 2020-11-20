@@ -1,0 +1,56 @@
+@keyframes opacity-effect{
+    /* from 은 0% 시작
+    opacity 1은 100% , 0은 0% */
+    0%{opacity: 1;} 
+    /* to 는 100% 끝*/
+    100%{opacity: 0;}
+}
+
+
+.opacity-effect{
+    border: 5px solid blue;
+    display: flex;
+    /* 위에 설정했던 프롬-투의 방향을 설정할 수 있다 여기선 역방향으로 설정했음 는  */
+}
+
+
+    /* 박스안에 여러가지 콘텐츠가 순차적으로 나타나게 하려면, 이미지 각각에 효과를 적용해주어야 한다. 전체박스에 적용하면 안됨 */
+    .opacity-effect img{
+        width: 12.5%;
+    animation-name: opacity-effect;
+    animation-duration: 300ms;
+    /* 3000mc=3s */
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    opacity: 0;
+
+}
+
+.img2{
+    animation-delay:150ms;
+}
+
+.img3{
+    animation-delay:300ms;
+}
+
+.img4{
+    animation-delay:450ms;
+}
+
+.img5{
+    animation-delay:600ms;
+}
+
+.img6{
+    animation-delay:750ms;
+}
+
+.img7{
+    animation-delay:900ms;
+}
+
+.img8{
+    animation-delay:1050ms;
+}
+
